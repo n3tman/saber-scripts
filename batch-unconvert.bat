@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-title Batch UNcovert DAT Maps to JSON
+title Batch UNconvert DAT Maps to JSON
 
 if [%1] == [] (
     echo.
