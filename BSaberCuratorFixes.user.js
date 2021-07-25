@@ -6,6 +6,8 @@
 // @author       n3tman
 // @match        https://bsaber.com/wp-admin/post.php?*action=edit*
 // @icon         https://www.google.com/s2/favicons?domain=bsaber.com
+// @updateURL    https://n3tman.github.io/saber-scripts/BSaberCuratorFixes.user.js
+// @downloadURL  https://n3tman.github.io/saber-scripts/BSaberCuratorFixes.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
