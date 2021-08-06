@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BSaber Curator Fixes
 // @namespace    bsaber.com
-// @version      0.2
+// @version      0.3
 // @description  Adds Now button when editing posts, highlights required categories
 // @author       n3tman
 // @match        https://bsaber.com/wp-admin/post.php?*action=edit*
@@ -10,10 +10,10 @@
 // @downloadURL  https://n3tman.github.io/saber-scripts/BSaberCuratorFixes.user.js
 // @grant        GM_addStyle
 // @grant        GM_xmlhttpRequest
-// @connect      beatsaver.com
+// @connect      api.beatsaver.com
 // ==/UserScript==
 
-var userAgent = 'BSaberCuratorFixes/0.2 (+https://github.com/n3tman/saber-scripts)';
+var userAgent = 'BSaberCuratorFixes/0.3 (+https://github.com/n3tman/saber-scripts)';
 
 GM_addStyle('#category-35042, #category-35038, #post_author_override, .button.hl { background-color: rgb(185 243 178 / 40%); }');
 
@@ -36,7 +36,7 @@ function setBsaberDateTime(dateTime) {
 }
 
 function getBeatSaverData(mapKey, callback) {
-    var apiUrl = 'https://beatsaver.com/api/maps/detail/' + mapKey;
+    var apiUrl = 'https://api.beatsaver.com/maps/id/' + mapKey;
 
     GM_xmlhttpRequest({
         method: 'GET',
